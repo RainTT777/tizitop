@@ -282,7 +282,11 @@
         }
 
         .sidebar-left {
-            width: 320px;
+            width: 260px;
+            flex-shrink: 0;
+        }
+        .sidebar-right {
+            width: 300px;
             flex-shrink: 0;
         }
         @media (max-width: 1200px) {
@@ -290,7 +294,7 @@
                 flex-direction: column;
                 margin-top: 100px;
             }
-            .sidebar-left {
+            .sidebar-left, .sidebar-right {
                 width: 100%;
             }
         }
@@ -353,7 +357,7 @@
 
     <div class="article-layout-container">
         <aside class="sidebar-left">
-            <div class="widget toc-widget">
+            <div class="widget toc-widget" style="position: sticky; top: 100px;">
                 <h3 class="widget-title">文章目录</h3>
                 <ul class="toc-list">
                     <li class="toc-item"><a href="#intro">前言：云图机场崛起背景...</a></li>
@@ -364,17 +368,6 @@
                     <li class="toc-item"><a href="#section-5">五、退款政策与售后保障分析...</a></li>
                     <li class="toc-item"><a href="#section-6">六、总结与人群选购建议...</a></li>
                 </ul>
-            </div>
-
-            <!-- 侧边栏推荐组件 -->
-            <div class="widget">
-                <h3 class="widget-title">快速导航</h3>
-                <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6;">
-                    您可以随时访问 <a href="../comparison.html" style="color: var(--primary); font-weight: 600;">机场排行</a> 查看云图与 <a href="edgenova.html" style="color: var(--primary);">EdgeNova</a>、<a href="jilianyun.html" style="color: var(--primary);">极连云</a> 等全网主流梯子的横向多维度性能矩阵。
-                </p>
-                <div style="margin-top: 15px;">
-                    <a href="https://vip.ytjcok.org/#/register?code=75w0GoY2" target="_blank" rel="noopener noreferrer" style="display: block; text-align: center; background: linear-gradient(135deg, #059669, #10b981); color: white; padding: 10px; border-radius: 6px; font-weight: 700; text-decoration: none;">直达云图官网注册 →</a>
-                </div>
             </div>
         </aside>
 
@@ -395,7 +388,7 @@
                         <span>更新于: 2026-08-05</span>
                     </div>
                     <div class="article-tags" style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 12px; padding-bottom: 25px; border-bottom: 1px solid #e2e8f0;">
-                        <a href="../comparison.html" class="tag" style="background:#f1f5f9; color:#3b82f6; padding:6px 12px; border-radius:8px; font-size:0.85rem; font-weight:600; text-decoration:none;">排名第二 #2</a>
+                        <a href="../reviews.html" class="tag" style="background:#f1f5f9; color:#3b82f6; padding:6px 12px; border-radius:8px; font-size:0.85rem; font-weight:600; text-decoration:none;">机场测评</a>
                         <a href="../reviews.html" class="tag" style="background:#f1f5f9; color:#3b82f6; padding:6px 12px; border-radius:8px; font-size:0.85rem; font-weight:600; text-decoration:none;">金融级专线</a>
                         <a href="../reviews.html" class="tag" style="background:#f1f5f9; color:#3b82f6; padding:6px 12px; border-radius:8px; font-size:0.85rem; font-weight:600; text-decoration:none;">全节点1倍率</a>
                         <span class="views" style="margin-left: 15px; color:#94a3b8; font-size:0.9rem;">阅读量: 10.2k</span>
@@ -408,7 +401,9 @@
                 
                 <div class="article-body" id="articleBody">
                     <div style="text-align: center; margin: 40px 0 30px 0;">
-                        <img src="../images/logos/yuntu_logo.png" alt="云图机场 Logo" style="width: 240px; height: 240px; object-fit: cover; border-radius: 24px; box-shadow: 0 12px 30px rgba(0,0,0,0.15);">
+                        <img src="../images/logos/yuntu_logo.png" alt="云图 Logo" style="width: 240px; height: 240px; object-fit: cover; border-radius: 24px; box-shadow: 0 12px 30px rgba(0,0,0,0.15);">
+                        <h3 style="margin-top: 15px; font-size: 1.5rem; color: var(--text-primary); font-weight: 800;">云图 (Yuntu Airport)</h3>
+                        <p style="color: var(--text-muted); font-size: 0.95rem; margin-top: 5px;">官方入口：<a href="https://vip.ytjcok.org/#/register?code=75w0GoY2" target="_blank" rel="noopener noreferrer" style="color: var(--primary); font-weight: 700; text-decoration: underline;">vip.ytjcok.org (点击直达云图官网注册)</a></p>
                     </div>
 
                     <h2 id="section-1">一、 云图套餐体系与性价比深度拆解</h2>
@@ -647,13 +642,126 @@
                         </div>
                     </div>
 
-                    <div style="text-align: center; margin: 40px 0;">
-                        <a href="https://vip.ytjcok.org/#/register?code=75w0GoY2" target="_blank" rel="noopener noreferrer" class="btn-pulsing" style="display: inline-block; padding: 14px 32px; font-size: 1.1rem; text-decoration: none;">直达云图官网注册订阅 (享最高75折优惠) →</a>
+                    <div style="text-align: center; margin-top: 50px; margin-bottom: 50px;">
+                        <a href="https://vip.ytjcok.org/#/register?code=75w0GoY2" target="_blank" style="background: linear-gradient(135deg, #10b981, #059669); color: #ffffff; padding: 18px 50px; font-size: 1.3rem; border-radius: 50px; text-decoration: none; font-weight: bold; box-shadow: 0 8px 20px rgba(16, 185, 129, 0.4); display: inline-block; transition: all 0.3s ease;"> 🚀 立即前往 云图 官网    </a>
+                    </div>
+
+<!-- INJECTED_SEO_START -->
+
+<div class="article-faqs-block" style="margin-top: 40px; padding: 25px; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px;">
+        <h3 style="font-size: 1.3rem; color: #0f172a; font-weight: 800; margin-top: 0; margin-bottom: 20px; border-left: 4px solid #2563eb; padding-left: 10px;">💬 常见问题与技术解答 (FAQ)</h3>        <div class="faq-item" style="margin-bottom: 18px;">
+          <h4 style="font-size: 1.05rem; font-weight: 800; color: #1e293b; margin: 0 0 6px 0;">问：云图机场支持哪些科学上网客户端？</h4>
+          <p style="font-size: 0.95rem; color: #475569; line-height: 1.5; margin: 0;">答：云图机场全面兼容主流代理客户端，包括 Windows/Mac 平台的 Clash Verge Rev, Stash，iOS 的 Shadowrocket (小火箭), Quantumult X，以及 Android 的 v2rayNG, Sing-box 等。</p>
+        </div>        <div class="faq-item" style="margin-bottom: 18px;">
+          <h4 style="font-size: 1.05rem; font-weight: 800; color: #1e293b; margin: 0 0 6px 0;">问：云图机场的套餐是否有高倍率扣费陷阱？</h4>
+          <p style="font-size: 0.95rem; color: #475569; line-height: 1.5; margin: 0;">答：云图明确承诺“全节点 1 倍率”，所有金融级 IPLC/IEPL 专线节点均按真实消耗 1:1 扣费，无任何隐形倍率或扣费陷阱。</p>
+        </div>        <div class="faq-item" style="margin-bottom: 18px;">
+          <h4 style="font-size: 1.05rem; font-weight: 800; color: #1e293b; margin: 0 0 6px 0;">问：购买套餐后无法使用可以退款吗？</h4>
+          <p style="font-size: 0.95rem; color: #475569; line-height: 1.5; margin: 0;">答：虚拟商品一经售出不支持无理由退款。建议首次购买的新用户选择基础月付套餐进行本地网络测试，确认满意后再续费三年付套餐享受 75 折优惠。</p>
+        </div>
+      </div>
+            <div class="article-related-block" style="margin-top: 40px; padding: 25px; border: 1px solid #e2e8f0; border-radius: 12px;">
+        <h3 style="font-size: 1.2rem; color: #0f172a; font-weight: 800; margin-top: 0; margin-bottom: 15px;">📖 更多跨境网络百科与相关文章推荐</h3>
+        <ul style="padding-left: 20px; margin: 0; line-height: 1.8;">
+          <li><a href="edgenova.html" style="color: #2563eb; text-decoration: none; font-weight: 600;">EdgeNova 机场深度评测报告</a></li>
+          <li><a href="jilianyun.html" style="color: #2563eb; text-decoration: none; font-weight: 600;">极连云机场深度测评分析</a></li>
+          <li><a href="jisucloud.html" style="color: #2563eb; text-decoration: none; font-weight: 600;">极速Cloud 三网精品专线测评</a></li>
+        </ul>
+      </div>
+            <div class="article-tags-cloud" style="margin-top: 30px; display: flex; flex-wrap: wrap; gap: 8px;">
+        <a href="../reviews.html" style="background: #f1f5f9; color: #475569; padding: 6px 12px; border-radius: 15px; font-size: 0.8rem; text-decoration: none; font-weight: 600;">机场推荐</a>
+        <a href="../comparison.html" style="background: #f1f5f9; color: #475569; padding: 6px 12px; border-radius: 15px; font-size: 0.8rem; text-decoration: none; font-weight: 600;">机场评测</a>
+        <a href="faq_iplc_iepl_bgp.html" style="background: #f1f5f9; color: #475569; padding: 6px 12px; border-radius: 15px; font-size: 0.8rem; text-decoration: none; font-weight: 600;">专线知识</a>
+        <a href="faq_v2rayng_android.html" style="background: #f1f5f9; color: #475569; padding: 6px 12px; border-radius: 15px; font-size: 0.8rem; text-decoration: none; font-weight: 600;">客户端教程</a>
+        <a href="faq_streaming_unlock.html" style="background: #f1f5f9; color: #475569; padding: 6px 12px; border-radius: 15px; font-size: 0.8rem; text-decoration: none; font-weight: 600;">AI工具连通</a>
+      </div>
+      <!-- INJECTED_SEO_END -->
+</article>
+        </main>
+
+        <!-- Sidebar Right -->
+        <aside class="sidebar-right">
+            <!-- 文章信息 -->
+            <div class="widget widget-meta-info">
+                <h3 class="widget-title">文章信息</h3>
+                <ul class="meta-list" style="list-style: none; padding: 0; margin: 0;">
+                    <li style="display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px dashed var(--border-color); font-size: 0.9rem;">
+                        <span style="color: var(--text-muted);">文章分类</span>
+                        <span style="color: var(--text-primary); font-weight: 600;">机场测评</span>
+                    </li>
+                    <li style="display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px dashed var(--border-color); font-size: 0.9rem;">
+                        <span style="color: var(--text-muted);">阅读时长</span>
+                        <span style="color: var(--text-primary); font-weight: 600;">约 18 分钟</span>
+                    </li>
+                    <li style="display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px dashed var(--border-color); font-size: 0.9rem;">
+                        <span style="color: var(--text-muted);">字数统计</span>
+                        <span style="color: var(--text-primary); font-weight: 600;">约 3500 字</span>
+                    </li>
+                    <li style="display: flex; justify-content: space-between; padding: 10px 0; font-size: 0.9rem;">
+                        <span style="color: var(--text-muted);">最后更新</span>
+                        <span style="color: var(--text-primary); font-weight: 600;">2026 年最新</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- 新手入门指南 -->
+            <div class="widget widget-guide-info" style="background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 20px;">
+                <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px;">
+                    <div style="display: flex; align-items: center; gap: 10px;">
+                        <div style="width: 36px; height: 36px; background: rgba(99, 102, 241, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.1rem;">🧭</div>
+                        <div>
+                            <h4 style="margin: 0; font-size: 1rem; color: var(--text-primary); font-weight: 700;">新手入门指南</h4>
+                            <span style="font-size: 0.75rem; color: var(--text-muted);">从零开始教你科学上网</span>
+                        </div>
                     </div>
                 </div>
-            </article>
-        </main>
-    </div>
+                
+                <div style="display: flex; flex-direction: column; gap: 12px; margin-bottom: 18px;">
+                    <a href="../faq.html" style="display: flex; align-items: center; justify-content: space-between; padding: 10px 12px; background: var(--bg-base); border-radius: 8px; text-decoration: none; transition: var(--transition);">
+                        <div style="display: flex; align-items: center; gap: 10px;">
+                            <span style="width: 24px; height: 24px; background: #2563eb; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: 700;">01</span>
+                            <div>
+                                <div style="font-size: 0.88rem; font-weight: 600; color: var(--text-primary);">机场如何选择</div>
+                                <div style="font-size: 0.75rem; color: var(--text-muted);">新手必看，轻松选到合适的机场</div>
+                            </div>
+                        </div>
+                        <span style="color: var(--text-muted); font-size: 0.9rem;">›</span>
+                    </a>
+                    <a href="faq_v2rayng_android.html" style="display: flex; align-items: center; justify-content: space-between; padding: 10px 12px; background: var(--bg-base); border-radius: 8px; text-decoration: none; transition: var(--transition);">
+                        <div style="display: flex; align-items: center; gap: 10px;">
+                            <span style="width: 24px; height: 24px; background: #2563eb; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: 700;">02</span>
+                            <div>
+                                <div style="font-size: 0.88rem; font-weight: 600; color: var(--text-primary);">客户端安装教程</div>
+                                <div style="font-size: 0.75rem; color: var(--text-muted);">Clash / V2Ray / Shadowrocket 等</div>
+                            </div>
+                        </div>
+                        <span style="color: var(--text-muted); font-size: 0.9rem;">›</span>
+                    </a>
+                    <a href="faq_vless_reality.html" style="display: flex; align-items: center; justify-content: space-between; padding: 10px 12px; background: var(--bg-base); border-radius: 8px; text-decoration: none; transition: var(--transition);">
+                        <div style="display: flex; align-items: center; gap: 10px;">
+                            <span style="width: 24px; height: 24px; background: #2563eb; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: 700;">03</span>
+                            <div>
+                                <div style="font-size: 0.88rem; font-weight: 600; color: var(--text-primary);">订阅配置方法</div>
+                                <div style="font-size: 0.75rem; color: var(--text-muted);">手把手教你导入订阅与配置</div>
+                            </div>
+                        </div>
+                        <span style="color: var(--text-muted); font-size: 0.9rem;">›</span>
+                    </a>
+                    <a href="../faq.html" style="display: flex; align-items: center; justify-content: space-between; padding: 10px 12px; background: var(--bg-base); border-radius: 8px; text-decoration: none; transition: var(--transition);">
+                        <div style="display: flex; align-items: center; gap: 10px;">
+                            <span style="width: 24px; height: 24px; background: #2563eb; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: 700;">04</span>
+                            <div>
+                                <div style="font-size: 0.88rem; font-weight: 600; color: var(--text-primary);">常见问题解决</div>
+                                <div style="font-size: 0.75rem; color: var(--text-muted);">连接失败 / 速度慢等问题汇总</div>
+                            </div>
+                        </div>
+                        <span style="color: var(--text-muted); font-size: 0.9rem;">›</span>
+                    </a>
+                </div>
+
+                <a href="../faq.html" style="display: block; text-align: center; padding: 10px; background: #2563eb; color: white; border-radius: 8px; font-size: 0.9rem; font-weight: 700; text-decoration: none;">查看完整新手教程 →</a>
+            </div>
+        </aside>
 
     <footer class="site-footer">
         <div class="container">
