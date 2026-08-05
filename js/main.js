@@ -219,6 +219,9 @@ document.addEventListener('DOMContentLoaded', () => {
         filterProtocol.addEventListener('change', updateTable);
         filterStreaming.addEventListener('change', updateTable);
         sortTable.addEventListener('change', updateTable);
+
+        // Initial render on page load
+        updateTable();
     }
     // 5. Redirect on Homepage Scroll
     const isHomepage = document.getElementById('typing-subtitle') !== null;
