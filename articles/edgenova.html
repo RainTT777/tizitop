@@ -704,24 +704,87 @@
         </main>
 
         <!-- Sidebar Right -->
+        <!-- Sidebar Right -->
         <aside class="sidebar-right">
-            <!-- Article info widget -->
-            <div class="widget">
-                <h3 class="widget-title">测评说明</h3>
-                <div style="font-size: 0.9rem; line-height: 1.6; color: var(--text-secondary);">
-                    <p style="margin-bottom: 12px;"><strong>测试时间：</strong>2026年最新测试</p>
-                    <p style="margin-bottom: 12px;"><strong>测试节点：</strong>广州移动、上海电信、北京联通多路并发探测</p>
-                    <p><strong>评测立场：</strong>TiZi Top 专业测评部坚持100%客观中立，所有数据均为真实晚高峰监测所得。</p>
-                </div>
+            <!-- 文章信息 -->
+            <div class="widget widget-meta-info">
+                <h3 class="widget-title">文章信息</h3>
+                <ul class="meta-list" style="list-style: none; padding: 0; margin: 0;">
+                    <li style="display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px dashed var(--border-color); font-size: 0.9rem;">
+                        <span style="color: var(--text-muted);">文章分类</span>
+                        <span style="color: var(--text-primary); font-weight: 600;">机场测评</span>
+                    </li>
+                    <li style="display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px dashed var(--border-color); font-size: 0.9rem;">
+                        <span style="color: var(--text-muted);">阅读时长</span>
+                        <span style="color: var(--text-primary); font-weight: 600;">约 12 分钟</span>
+                    </li>
+                    <li style="display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px dashed var(--border-color); font-size: 0.9rem;">
+                        <span style="color: var(--text-muted);">字数统计</span>
+                        <span style="color: var(--text-primary); font-weight: 600;">约 2500 字</span>
+                    </li>
+                    <li style="display: flex; justify-content: space-between; padding: 10px 0; font-size: 0.9rem;">
+                        <span style="color: var(--text-muted);">最后更新</span>
+                        <span style="color: var(--text-primary); font-weight: 600;">2026 年最新</span>
+                    </li>
+                </ul>
             </div>
-            
-            <!-- Quick navigation widget -->
-            <div class="widget">
-                <h3 class="widget-title">快捷导航</h3>
-                <div style="display: flex; flex-direction: column; gap: 12px;">
-                    <a href="../comparison.html" style="color: var(--primary); font-weight: 600;">← 返回机场排行对比表</a>
-                    <a href="../reviews.html" style="color: var(--primary); font-weight: 600;">← 返回机场测评汇总卡片</a>
+
+            <!-- 新手入门指南 -->
+            <div class="widget widget-guide-info" style="background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 20px;">
+                <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px;">
+                    <div style="display: flex; align-items: center; gap: 10px;">
+                        <div style="width: 36px; height: 36px; background: rgba(99, 102, 241, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.1rem;">🧭</div>
+                        <div>
+                            <h4 style="margin: 0; font-size: 1rem; color: var(--text-primary); font-weight: 700;">新手入门指南</h4>
+                            <span style="font-size: 0.75rem; color: var(--text-muted);">从零开始教你科学上网</span>
+                        </div>
+                    </div>
                 </div>
+                
+                <div style="display: flex; flex-direction: column; gap: 12px; margin-bottom: 18px;">
+                    <a href="../faq.html" style="display: flex; align-items: center; justify-content: space-between; padding: 10px 12px; background: var(--bg-base); border-radius: 8px; text-decoration: none; transition: var(--transition);">
+                        <div style="display: flex; align-items: center; gap: 10px;">
+                            <span style="width: 24px; height: 24px; background: #2563eb; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: 700;">01</span>
+                            <div>
+                                <div style="font-size: 0.88rem; font-weight: 600; color: var(--text-primary);">机场如何选择</div>
+                                <div style="font-size: 0.75rem; color: var(--text-muted);">新手必看，轻松选到合适的机场</div>
+                            </div>
+                        </div>
+                        <span style="color: var(--text-muted); font-size: 0.9rem;">›</span>
+                    </a>
+                    <a href="faq_v2rayng_android.html" style="display: flex; align-items: center; justify-content: space-between; padding: 10px 12px; background: var(--bg-base); border-radius: 8px; text-decoration: none; transition: var(--transition);">
+                        <div style="display: flex; align-items: center; gap: 10px;">
+                            <span style="width: 24px; height: 24px; background: #2563eb; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: 700;">02</span>
+                            <div>
+                                <div style="font-size: 0.88rem; font-weight: 600; color: var(--text-primary);">客户端安装教程</div>
+                                <div style="font-size: 0.75rem; color: var(--text-muted);">Clash / V2Ray / Shadowrocket 等</div>
+                            </div>
+                        </div>
+                        <span style="color: var(--text-muted); font-size: 0.9rem;">›</span>
+                    </a>
+                    <a href="faq_vless_reality.html" style="display: flex; align-items: center; justify-content: space-between; padding: 10px 12px; background: var(--bg-base); border-radius: 8px; text-decoration: none; transition: var(--transition);">
+                        <div style="display: flex; align-items: center; gap: 10px;">
+                            <span style="width: 24px; height: 24px; background: #2563eb; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: 700;">03</span>
+                            <div>
+                                <div style="font-size: 0.88rem; font-weight: 600; color: var(--text-primary);">订阅配置方法</div>
+                                <div style="font-size: 0.75rem; color: var(--text-muted);">手把手教你导入订阅与配置</div>
+                            </div>
+                        </div>
+                        <span style="color: var(--text-muted); font-size: 0.9rem;">›</span>
+                    </a>
+                    <a href="../faq.html" style="display: flex; align-items: center; justify-content: space-between; padding: 10px 12px; background: var(--bg-base); border-radius: 8px; text-decoration: none; transition: var(--transition);">
+                        <div style="display: flex; align-items: center; gap: 10px;">
+                            <span style="width: 24px; height: 24px; background: #2563eb; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: 700;">04</span>
+                            <div>
+                                <div style="font-size: 0.88rem; font-weight: 600; color: var(--text-primary);">常见问题解决</div>
+                                <div style="font-size: 0.75rem; color: var(--text-muted);">连接失败 / 速度慢等问题汇总</div>
+                            </div>
+                        </div>
+                        <span style="color: var(--text-muted); font-size: 0.9rem;">›</span>
+                    </a>
+                </div>
+
+                <a href="../faq.html" style="display: block; text-align: center; padding: 10px; background: #2563eb; color: white; border-radius: 8px; font-size: 0.9rem; font-weight: 700; text-decoration: none;">查看完整新手教程 →</a>
             </div>
         </aside>
     </div>
