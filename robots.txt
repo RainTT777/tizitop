@@ -1,4 +1,105 @@
-﻿User-agent: *
+User-agent: *
 Allow: /
 
+# ========================================================
+# 国内 AI 大模型 & 搜索引擎 Agent 抓取放行 (Domestic AI Crawlers)
+# ========================================================
+
+# 字节跳动 / 豆包 AI 爬虫
+User-agent: Bytespider
+User-agent: Bytespider-AI
+Allow: /
+
+# 百度 / 文心一言 & 搜索引擎
+User-agent: Baiduspider
+User-agent: Baiduspider-render
+User-agent: Baiduspider-image
+Allow: /
+
+# 阿里 / 通义千问 & 夸克搜索 & 神马搜索
+User-agent: YisouSpider
+User-agent: QuarkSpider
+Allow: /
+
+# 搜狗搜索
+User-agent: Sogou web spider
+User-agent: Sogou inst spider
+Allow: /
+
+# 360 智脑 / 奇虎搜索
+User-agent: 360Spider
+Allow: /
+
+# DeepSeek 深度求索 AI 搜索爬虫
+User-agent: DeepSeek-Bot
+User-agent: Deepseek
+Allow: /
+
+# 月之暗面 / Kimi AI 爬虫
+User-agent: KimiSpider
+User-agent: Moonshot-Bot
+Allow: /
+
+# 智谱 AI / ChatGLM 爬虫
+User-agent: ZhipuAI-Bot
+User-agent: ChatGLM-Bot
+Allow: /
+
+# 腾讯 / 混元 AI & DNS 爬虫
+User-agent: Tencent-Bot
+User-agent: DNSPod-Spider
+Allow: /
+
+# ========================================================
+# 国际主流 AI 大模型 & 搜索引擎 Agent 抓取放行 (Global AI Crawlers)
+# ========================================================
+
+# OpenAI / ChatGPT
+User-agent: GPTBot
+User-agent: ChatGPT-User
+User-agent: OAI-SearchBot
+Allow: /
+
+# Anthropic / Claude
+User-agent: ClaudeBot
+User-agent: anthropic-ai
+User-agent: Claude-Web
+Allow: /
+
+# Perplexity AI
+User-agent: PerplexityBot
+Allow: /
+
+# Google / Gemini AI & Search
+User-agent: Google-Extended
+User-agent: Googlebot
+Allow: /
+
+# Meta AI
+User-agent: Meta-ExternalAgent
+User-agent: Meta-ExternalFetcher
+Allow: /
+
+# Cohere AI
+User-agent: cohere-ai
+Allow: /
+
+# Apple Intelligence / Applebot
+User-agent: Applebot-Extended
+User-agent: Applebot
+Allow: /
+
+# Amazon AI
+User-agent: Amazonbot
+Allow: /
+
+# You.com AI Search
+User-agent: YouBot
+Allow: /
+
+# DuckDuckGo
+User-agent: DuckDuckGo-Favicons-Bot
+Allow: /
+
+# 站点地图声明
 Sitemap: https://tizitop.com/sitemap.xml
